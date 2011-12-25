@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>DEL</title>
+<link rel="stylesheet" type="text/css" href="del_home/31e3718b8e05eb17e6c7e5664a3dd65e.css" media="all">
+<link rel="stylesheet" type="text/css" href="del_home/764176c4be72f12bcd8adbb4dfbcb72d.css" media="all">
+<link rel="stylesheet" type="text/css" href="del_home/08c1e439e15fd0ec474a6021e4b1ce75.css" media="all">
+<link rel="stylesheet" type="text/css" href="stylesheets/pop_up.css" media="all">
+<link rel="stylesheet" type="text/css" href="stylesheets/validation_sign_up.css" media="all">
+<link href="javascript: void(0);" rel="publisher">
+<script type="text/javascript" src="javascripts/jquery.js"></script>
+<script type="text/javascript" src="javascripts/jquery-ui.js"></script>
+<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery_ujs.js"></script>
+<body>
+
+<center>
+
+<script type="text/javascript" src="javascripts/sign_up.js"></script>
+<script>
+$(function() {
+  $( "#dialog-form" ).dialog( "open" );
+  });
+</script>
+
+
+<div id="dialog-form" title="Sign up today">
+	<p class="validateTips"><%= devise_error_messages! %></p>
+
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+                <table>
+                  <tr>
+                    <td>
+		      <div for="name" class="label_sign_up">Name</div>
+                    </td>
+                    <td>
+		      <input type="text" name="doctor[name]" id="doctor_name" class="text ui-widget-content ui-corner-all"/>
+                    </td>
+                  </tr>
+                 <tr>
+		  <td>
+                    <div for="email" class="label_sign_up">Email</div>
+                  </td>
+                  <td>
+                  <%= f.email_field :email, :class=>"text ui-widget-content ui-corner-all" %>
+                   </td>
+                </tr>
+                <tr>
+                 <td>
+		  <div for="password" class="label_sign_up">Password</div>
+                 </td>
+                 <td>
+		  <input type="password" name="doctor[password]" id="doctor_password" value="" class="text ui-widget-content ui-corner-all" />
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+		  <div for="password" class="label_sign_up">Password Confirmation</div>
+                 </td>
+                 <td>
+		  <input type="password" name="doctor[password_confirmation]" id="doctor_password_confirmation" value="" class="text ui-widget-content ui-corner-all" />
+                 </td>
+                </tr>
+                </table>
+ 
+	<% end %>
+</div>
+<div id="top">
+    <div id="logo">
+        <a href="javascript: void(0);"><img src="del_home/50aa34b6d8e8eb2a50949da104314871.png" alt="Todoist"></a>
+    </div>
+
+    <div id="top_right" class="actions">
+    </div>
+
+    <div id="indicator"></div>
+</div>
+
+
+<div id="content">
+    <div class="right_sidebar">
+        <div id="login_signup">
+            <div id="error" class="error" style="display: none;"></div>
+
+            <form id="login_form" method="post" action="https://todoist.com/Users/login">
+                <input name="callback" value="app" id="callback" type="hidden">
+
+                <dl>
+                    <dt>Email:</dt>
+                    <dd><input name="email" class="input" id="email" tabindex="1" type="text"></dd>
+
+                    <dt>Password:</dt>
+                    <dd><input name="password" class="input" tabindex="2" type="password"></dd>
+
+                    <dd class="submit">
+                        <a href="javascript: void(0);" class="forgot" tabindex="4" onclick="return GB_show('Forgot your password?', this.href, 200, 450)">Forgot your password?</a>
+                        <input value="Login" name="submit_btn" tabindex="3" type="submit"> 
+                    </dd>
+
+                    <input name="ssl" value="0" type="hidden">
+                </dl>
+            </form>
+
+        </div>
+
+        
+    <div id="extra_info">
+        <p class="hightlight">
+            <a href="javascript: void(0);" target="_blank"><img src="del_home/0ae70437fcb71e17679da05c0313fe6e.png"></a>
+            <a href="javascript: void(0);" target="_blank"><b>Working in a team?</b><br>
+            Try Wedoist - our online project management and team collaboration solution.</a>
+        </p>
+
+        <p>
+            <img src="del_home/1fa0458ac9cbad930fe40020927737d9.png">
+            <b>Millions of users</b><br>
+            We have made web-apps for the last 10 years and our software is used by millions of people worldwide.
+        </p>
+
+        <p>
+            <img src="del_home/8afaadfc642d5590fd081df24b83819f.png">
+            <b>Security</b><br>
+            Sensitive data is encrypted with SSL, the same security used in online banks.
+        </p>
+
+        <p>
+            <img src="del_home/82496aeb4ffb6cda538d2d0d1dadbf1e.png">
+            <b>Privacy</b><br>
+            Your privacy is critical for us and your DEL data is protected and safe from prying eyes.
+        </p>
+
+        <p>
+            <img src="del_home/f645303a551e2107954b862d428c97b2.png">
+            <b>Backups</b><br>
+            We take daily backups of all your data and store it on 3 different data centers.
+        </p>
+    </div>
+
+    </div>
+
+    <div id="about">
+        <h1>Get Things Done with DEL</h1>
+
+        <p class="top under_h1">
+            DEL is a leading online task manager that's useful, fast and easy to use.
+            <br>
+            We manage millions of to-dos and we are ready to manage yours as well!
+        </p>
+
+        <div style="height: 48px;" id="sign_up_del">
+            <a href="javascript: void(0);"  class="big_button"><span>Sign Up Today</span></a> 
+        </div>
+
+        <div id="under_signup">
+        Creating an account is free and takes 20 seconds
+        </div>
+
+        <table>
+
+            <tbody><tr>
+                <td class="screenshot">
+                    <a href="javascript: void(0);" onclick="return GB_showImage('Interface overview', this.href)"><img src="#"></a>
+                </td>
+
+                <td class="screenshot_text">
+                    <h3>Simple and powerful interface</h3>
+                    DEL features a simple and intuitive interface that helps you get organized without getting in your way.
+                </td>
+            </tr>
+
+            <tr><td colspan="2" class="separator"></td></tr>
+
+            <tr>
+                <td class="screenshot">
+                    <a href="javascript: void(0);" onclick="return GB_showImage('Built-in calendar', this.href)"><img src="#"></a>
+                </td>
+
+                <td class="screenshot_text">
+                    <h3>Built-in calendar with recurring dates</h3>
+                    Set due dates on your tasks and get overview over what needs to get done today, tomorrow or next Wednesday.
+                </td>
+            </tr>
+
+            <tr><td colspan="2" class="separator"></td></tr>
+
+            <tr>
+                <td class="screenshot">
+                    <a href="javascript: void(0);" onclick="return GB_showImage('Sub-projects and sub-tasks', this.href)"><img src="#"></a>
+                </td>
+
+                <td class="screenshot_text">
+                    <h3>Sub-projects and sub-tasks</h3>
+                    Create sub-projects and sub-tasks with ease using keyboard shortcuts or your mouse.
+                    Structure your tasks in any way you like.
+                </td>
+            </tr>
+
+            <tr><td colspan="2" class="separator"></td></tr>
+
+            <tr>
+                <td class="screenshot">
+                    <img src="#" style="border: medium none;">
+                </td>
+
+                <td class="screenshot_text">
+                    <h3>And a lot more reasons...</h3>
+                    Reminders, Gmail integration, Mobile access, Outlook integration, Browser plugins, Labels, Widgets, API...
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+</div>
+
+
+<div id="bottom"><span class="social_media_links"><a class="social_media_link" target="_blank" href="javascript: void(0);"><img class="icon cmp_gplus_off" src="del_home/76084e29cb2cf72b320e888edc583dfb.gif" height="27" width="27"></a><a class="social_media_link" target="_blank" href="javascript: void(0);"><img class="icon cmp_facebook_off" src="del_home/76084e29cb2cf72b320e888edc583dfb.gif" height="27" width="27"></a><a class="social_media_link" target="_blank" href="javascript: void(0);"><img class="icon cmp_twitter_off" src="del_home/76084e29cb2cf72b320e888edc583dfb.gif" height="27" width="27"></a></span>
+    © DEL
+    <a href="javascript: void(0);" class="action" onclick="return GB_show('Privacy Policy', '/Help/viewPrivacyPolicy', 450, 500)">Privacy Policy</a>
+    <a href="javascript: void(0);" class="action" onclick="return GB_show('About Us', '/aboutUs', 570, 700)">About Us</a>
+    <a href="javascript: void(0);" class="action" target="_blank">Support</a>
+</div>
+</center>
+</body></html>
