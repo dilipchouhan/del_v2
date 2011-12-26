@@ -1,5 +1,8 @@
 PatientsManagement::Application.routes.draw do
+  resources :patients do as_routes end
+  resources :doctors do as_routes end
   devise_for :doctors
+  match 'home' => 'homes#home', :as=>:home
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111224181343) do
+ActiveRecord::Schema.define(:version => 20111225112111) do
 
   create_table "doctors", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -30,5 +30,21 @@ ActiveRecord::Schema.define(:version => 20111224181343) do
 
   add_index "doctors", ["email"], :name => "index_doctors_on_email", :unique => true
   add_index "doctors", ["reset_password_token"], :name => "index_doctors_on_reset_password_token", :unique => true
+
+  create_table "patients", :force => true do |t|
+    t.integer  "doctor_id"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.boolean  "gender"
+    t.integer  "age"
+    t.string   "father_name"
+    t.string   "husband_name"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zipcode"
+    t.string   "address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

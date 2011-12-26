@@ -5,19 +5,19 @@
 <link rel="stylesheet" type="text/css" href="/del_home/31e3718b8e05eb17e6c7e5664a3dd65e.css" media="all">
 <link rel="stylesheet" type="text/css" href="/del_home/764176c4be72f12bcd8adbb4dfbcb72d.css" media="all">
 <link rel="stylesheet" type="text/css" href="/del_home/08c1e439e15fd0ec474a6021e4b1ce75.css" media="all">
-<link rel="stylesheet" type="text/css" href="stylesheets/pop_up.css" media="all">
-<link rel="stylesheet" type="text/css" href="stylesheets/validation_sign_up.css" media="all">
+<link rel="stylesheet" type="text/css" href="/stylesheets/pop_up.css" media="all">
+<link rel="stylesheet" type="text/css" href="/stylesheets/validation_sign_up.css" media="all">
 <link href="javascript: void(0);" rel="publisher">
-<script type="text/javascript" src="javascripts/jquery.js"></script>
-<script type="text/javascript" src="javascripts/jquery-ui.js"></script>
-<script type="text/javascript" src="javascripts/jquery.min.js"></script>
-<script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
-<script type="text/javascript" src="javascripts/jquery_ujs.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/jquery-ui.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/javascripts/jquery_ujs.js"></script>
 <body>
 
 <center>
 
-<script type="text/javascript" src="javascripts/sign_up.js"></script>
+<script type="text/javascript" src="/javascripts/sign_up.js"></script>
 
 
 
@@ -79,7 +79,7 @@
         <div id="login_signup">
             <div id="error" class="error" style="display: none;"></div>
            <%= devise_error_messages! %>
-           <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+            <form method="post" id="doctor_sign_in" action="/doctors/sign_in" accept-charset="UTF-8">
                 <input name="callback" value="app" id="callback" type="hidden">
 
                 <dl>
@@ -89,7 +89,7 @@
                     </dd>
 
                     <dt>Password:</dt>
-                    <dd><input name="doctoe[password]" class="input" tabindex="2" type="password"></dd>
+                    <dd><input name="doctor[password]" class="input" tabindex="2" type="password"></dd>
 
                     <dd class="submit">
                         <a href="javascript: void(0);" class="forgot" tabindex="4" onclick="">Forgot your password?</a>

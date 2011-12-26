@@ -87,10 +87,10 @@
                     <dd><input name="doctor[email]" class="input" id="d_email" tabindex="1" type="text"></dd>
 
                     <dt>Password:</dt>
-                    <dd><input name="doctoe[password]" class="input" tabindex="2" type="password"></dd>
+                    <dd><input name="doctor[password]" class="input" tabindex="2" type="password"></dd>
 
                     <dd class="submit">
-                        <a href="javascript: void(0);" class="forgot" tabindex="4" onclick="return GB_show('Forgot your password?', this.href, 200, 450)">Forgot your password?</a>
+                        <a href="javascript: void(0);" class="forgot" tabindex="4" onclick="">Forgot your password?</a>
                         <input value="Login" name="submit_btn" tabindex="3" type="submit"> 
                     </dd>
 
@@ -211,8 +211,8 @@
 
 <div id="bottom"><span class="social_media_links"><a class="social_media_link" target="_blank" href="javascript: void(0);"><img class="icon cmp_gplus_off" src="del_home/76084e29cb2cf72b320e888edc583dfb.gif" height="27" width="27"></a><a class="social_media_link" target="_blank" href="javascript: void(0);"><img class="icon cmp_facebook_off" src="del_home/76084e29cb2cf72b320e888edc583dfb.gif" height="27" width="27"></a><a class="social_media_link" target="_blank" href="javascript: void(0);"><img class="icon cmp_twitter_off" src="del_home/76084e29cb2cf72b320e888edc583dfb.gif" height="27" width="27"></a></span>
     © DEL
-    <a href="javascript: void(0);" class="action" onclick="return GB_show('Privacy Policy', '/Help/viewPrivacyPolicy', 450, 500)">Privacy Policy</a>
-    <a href="javascript: void(0);" class="action" onclick="return GB_show('About Us', '/aboutUs', 570, 700)">About Us</a>
+    <a href="javascript: void(0);" class="action">Privacy Policy</a>
+    <a href="javascript: void(0);" class="action" >About Us</a>
     <a href="javascript: void(0);" class="action" target="_blank">Support</a>
 </div>
 </center>

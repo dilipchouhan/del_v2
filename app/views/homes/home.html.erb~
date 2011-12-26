@@ -1,0 +1,65 @@
+<div id="sub-header">
+	<h2>Great Medical Practice.</h2>
+    <p>The Auckland Allergy Clinic is committed to the provision of a high quality private sector diagnostic and management service for patients and referring doctors.The Auckland Allergy Clinic is the longest established private allergy clinic in Auckland, New Zealand. The clinic was established in Remuera, in 1994 and moved to Jervois Road, Herne Bay at the end of 2000. The clinic treats both adults and children with all Allergic Diseases. </p>
+    <p class="continue"><a href="#">continue reading</a></p>
+</div>
+<!-- //#sub-header -->
+
+<div id="content">
+	<div id="main-content">
+    	<ul id="services">
+        	<li class="item-1">
+            	<h3>Management</h3>
+                <p>Phasellus convallis consectetur ultricies. Aenean magna odio, mattis eu porttitor rhoncus, posuere et dui. In augue justo, bibendum nec aliquam vel, lacinia et eros.</p>
+                <p class="continue"><a href="#">continue reading</a></p>
+            </li>
+            <li class="item-2 last-row-item">
+            	<h3>Property</h3>
+                <p>Phasellus convallis consectetur ultricies. Aenean magna odio, mattis eu porttitor rhoncus, posuere et dui. In augue justo, bibendum nec aliquam vel, lacinia et eros.</p>
+                <p class="continue"><a href="#">continue reading</a></p>
+            </li>
+            <li class="item-3">
+            	<h3>Finance</h3>
+                <p>Phasellus convallis consectetur ultricies. Aenean magna odio, mattis eu porttitor rhoncus, posuere et dui. In augue justo, bibendum nec aliquam vel, lacinia et eros.</p>
+                <p class="continue"><a href="#">continue reading</a></p>
+            </li>
+            <li class="item-4 last-row-item">
+            	<h3>Consulting</h3>
+                <p>Phasellus convallis consectetur ultricies. Aenean magna odio, mattis eu porttitor rhoncus, posuere et dui. In augue justo, bibendum nec aliquam vel, lacinia et eros. </p>
+                <p class="continue"><a href="#">continue reading</a></p>
+            </li>
+        </ul>
+    </div>
+    <!-- //#main-content -->
+    <div id="sidebar">
+    	<h4>Information</h4>
+        <p>Mauris eu mauris magna, nec tincidunt diam. Vivamus eget lacus lorem, in volutpat lorem. Vivamus luctus facilisis sapien ac mattis.</p>
+        <h4>Get in touch</h4>
+        <p>Vestibulum quis turpis eget libero rutrum cursus. Aliquam erat volutpat. Nulla sit amet orci et massa iaculis ultrices.</p>
+        <p><strong>Contact person:</strong> John Smith<br /><strong>Mobile:</strong> +385 99 561 9441</strong><br /><strong>Email:</strong> <a href="#">info@business.com</a></p>
+        <h4>Our partners</h4>
+        <ul>
+        	<li><a href="http://www.agilo.hr">Agilo Web Developement</a></li>
+            <li><a href="http://www.manevar.com/">Manevar - Brand &amp; Identity Design</a></li>
+        </ul>
+    </div>
+    <!-- //#sidebar -->
+</div>
+<!-- //#content -->
+
+<div id="footer">
+	<ul>
+        <li class="first-item"><a href="#" class="active">Home</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+  </ul>
+  <p>Copyright &copy; 2010 Business.com. All rights reserved.</p>
+  <p class="custom"><strong>Design: <a href="http://www.fatureta.com">Fatureta</a></strong> <span>|</span> <strong>Code: <a href="http://www.slicejack.com" title="PSD to (X)HTML, PSD to CMS service">Slicejack</a></strong></p>
+</div>
+<!-- //#footer -->
+
+

@@ -78,18 +78,17 @@
     <div class="right_sidebar">
         <div id="login_signup">
             <div id="error" class="error" style="display: none;"></div>
-           <%= devise_error_messages! %>
-           <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+            <form method="post" id="doctor_sign_in" action="/doctors/sign_in" accept-charset="UTF-8">
                 <input name="callback" value="app" id="callback" type="hidden">
 
                 <dl>
                     <dt>Email:</dt>
                     <dd>
-                     <%= f.email_field :email,:class=>"input",:id=>"d_email",:tabindex=>"1"%>
+                     <input name="doctor[email]" class="input" id="d_email" tabindex="1" type="text">
                     </dd>
 
                     <dt>Password:</dt>
-                    <dd><input name="doctoe[password]" class="input" tabindex="2" type="password"></dd>
+                    <dd><input name="doctor[password]" class="input" tabindex="2" type="password"></dd>
 
                     <dd class="submit">
                         <a href="javascript: void(0);" class="forgot" tabindex="4" onclick="">Forgot your password?</a>
@@ -98,7 +97,7 @@
 
                     <input name="ssl" value="0" type="hidden">
                 </dl>
-            <% end %>
+            </form>
 
         </div>
 

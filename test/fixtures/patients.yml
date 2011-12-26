@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  doctor: 
+  first_name: MyString
+  last_name: MyString
+  gender: false
+  age: 1
+  father_name: MyString
+  husband_name: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  address: MyString
+
+two:
+  doctor: 
+  first_name: MyString
+  last_name: MyString
+  gender: false
+  age: 1
+  father_name: MyString
+  husband_name: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  address: MyString

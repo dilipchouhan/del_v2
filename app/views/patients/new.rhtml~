@@ -1,0 +1,291 @@
+<tr class="inline-adapter" id="as_patients-nested--row">
+  <td colspan="99" class="inline-adapter-cell">
+    <div class="new-view patients-view view">
+      <a href="" class="inline-adapter-close as_cancel" data-refresh="false" data-remote="true" title="Close">Close</a>      <div class="active-scaffold">
+  <div class="create-view patients-view view">
+    <form accept-charset="UTF-8" action="/patients" class="as_form create" data-loading="true" data-remote="true" id="as_patients-create--form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="M03l/5HHTLCLQRhD20u3oyGCWkObphmTlILs+jSsIiM=" /></div>
+  <h4>Create Patient1</h4>
+
+  <div id="as_patients-create--messages" class="messages-container">
+       
+  </div>
+
+  <ol class="form"  >
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_address_">Address</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="address-input text-input" id="record_address_" maxlength="255" name="record[address]" size="30" type="text" />
+  </dd>
+</dl>
+  </li>
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_age_">Age</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="age-input text-input" format="i18n_number" id="record_age_" name="record[age]" size="30" type="text" value="" />
+  </dd>
+</dl>
+  </li>
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_city_">City</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="city-input text-input" id="record_city_" maxlength="255" name="record[city]" size="30" type="text" />
+  </dd>
+</dl>
+  </li>
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_father_name_">Father name</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="father_name-input text-input" id="record_father_name_" maxlength="255" name="record[father_name]" size="30" type="text" />
+  </dd>
+</dl>
+  </li>
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_first_name_">First name</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="first_name-input text-input" id="record_first_name_" maxlength="255" name="record[first_name]" size="30" type="text" />
+  </dd>
+</dl>
+  </li>
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_gender_">Gender</label>
+  </dt>
+  <dd>
+    <input name="record[gender]" type="hidden" value="0" /><input class="gender-input" id="record_gender_" name="record[gender]" type="checkbox" value="1" />
+  </dd>
+</dl>
+  </li>
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_husband_name_">Husband name</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="husband_name-input text-input" id="record_husband_name_" maxlength="255" name="record[husband_name]" size="30" type="text" />
+  </dd>
+</dl>
+  </li>
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_last_name_">Last name</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="last_name-input text-input" id="record_last_name_" maxlength="255" name="record[last_name]" size="30" type="text" />
+  </dd>
+</dl>
+  </li>
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_state_">State</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="state-input text-input" id="record_state_" maxlength="255" name="record[state]" size="30" type="text" />
+  </dd>
+</dl>
+  </li>
+  <li class="form-element  ">
+    <dl>
+  <dt>
+    <label for="record_zipcode_">Zipcode</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="zipcode-input text-input" id="record_zipcode_" maxlength="255" name="record[zipcode]" size="30" type="text" />
+  </dd>
+</dl>
+  </li>
+  <li class="sub-form horizontal-sub-form  doctor-sub-form" id="as_patients--doctor-subform">
+    <h5>Doctor</h5>
+<div id ="as_patients-99999999999-doctor-subform-div" >
+<table cellpadding="0" cellspacing="0">
+  <thead>
+  <tr>
+      <th class="required "><label>Email</label></th>
+      <th class=" "><label>Current sign in at</label></th>
+      <th class=" "><label>Current sign in ip</label></th>
+      <th class=" "><label>Encrypted password</label></th>
+      <th class=" "><label>Last sign in at</label></th>
+      <th class=" "><label>Last sign in ip</label></th>
+      <th class=" "><label>Remember created at</label></th>
+      <th class=" "><label>Reset password sent at</label></th>
+      <th class=" "><label>Reset password token</label></th>
+  </tr>
+</thead>
+
+
+  <tbody id="as_patients--doctor-subform-list">
+    <tr class="association-record-errors">
+      <td colspan="10" id="as_patients-doctor--0-messages">
+        
+      </td>
+    </tr>
+    <tr id="association-record_id__doctor" class="association-record association-record-new locked">
+  <td>
+      <dl>
+  <dt>
+    <label for="record_email__doctor">Email</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="email-input text-input" id="record_email__doctor" maxlength="255" name="record[doctor][email]" size="30" type="text" value="" />
+  </dd>
+</dl>
+  </td>
+  <td>
+      <dl>
+  <dt>
+    <label for="record_current_sign_in_at__doctor">Current sign in at</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="current_sign_in_at-input text-input datetime_picker" id="record_current_sign_in_at__doctor" name="record[doctor][current_sign_in_at]" size="30" type="text" />
+  </dd>
+</dl>
+  </td>
+  <td>
+      <dl>
+  <dt>
+    <label for="record_current_sign_in_ip__doctor">Current sign in ip</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="current_sign_in_ip-input text-input" id="record_current_sign_in_ip__doctor" maxlength="255" name="record[doctor][current_sign_in_ip]" size="30" type="text" />
+  </dd>
+</dl>
+  </td>
+  <td>
+      <dl>
+  <dt>
+    <label for="record_encrypted_password__doctor">Encrypted password</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="encrypted_password-input text-input" id="record_encrypted_password__doctor" maxlength="128" name="record[doctor][encrypted_password]" size="30" type="text" value="" />
+  </dd>
+</dl>
+  </td>
+  <td>
+      <dl>
+  <dt>
+    <label for="record_last_sign_in_at__doctor">Last sign in at</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="last_sign_in_at-input text-input datetime_picker" id="record_last_sign_in_at__doctor" name="record[doctor][last_sign_in_at]" size="30" type="text" />
+  </dd>
+</dl>
+  </td>
+  <td>
+      <dl>
+  <dt>
+    <label for="record_last_sign_in_ip__doctor">Last sign in ip</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="last_sign_in_ip-input text-input" id="record_last_sign_in_ip__doctor" maxlength="255" name="record[doctor][last_sign_in_ip]" size="30" type="text" />
+  </dd>
+</dl>
+  </td>
+  <td>
+      <dl>
+  <dt>
+    <label for="record_remember_created_at__doctor">Remember created at</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="remember_created_at-input text-input datetime_picker" id="record_remember_created_at__doctor" name="record[doctor][remember_created_at]" size="30" type="text" />
+  </dd>
+</dl>
+  </td>
+  <td>
+      <dl>
+  <dt>
+    <label for="record_reset_password_sent_at__doctor">Reset password sent at</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="reset_password_sent_at-input text-input datetime_picker" id="record_reset_password_sent_at__doctor" name="record[doctor][reset_password_sent_at]" size="30" type="text" />
+  </dd>
+</dl>
+  </td>
+  <td>
+      <dl>
+  <dt>
+    <label for="record_reset_password_token__doctor">Reset password token</label>
+  </dt>
+  <dd>
+    <input autocomplete="off" class="reset_password_token-input text-input" id="record_reset_password_token__doctor" maxlength="255" name="record[doctor][reset_password_token]" size="30" type="text" />
+  </dd>
+</dl>
+  </td>
+  <td class="actions">
+  </td>
+</tr>
+
+  </tbody>
+</table>
+<div class="footer-wrapper">
+  <div class="footer">
+    <a href="/patients/edit_associated?association=doctor" class="as_replace_with_new" data-remote="true" id="as_patients--doctor-subform-create-another" style="display: none;">Replace With New</a>
+    <script type="text/javascript">
+//<![CDATA[
+ActiveScaffold.show('as_patients--doctor-subform-create-another');
+//]]>
+</script>
+
+    |
+
+        <select id="associated_id" name="associated_id"><option value="">- select -</option><option value="4">#&lt;Doctor:0xb1ad94c&gt;</option>
+<option value="3">#&lt;Doctor:0xb1ada50&gt;</option>
+<option value="2">#&lt;Doctor:0xb1adb18&gt;</option>
+<option value="1">#&lt;Doctor:0xb1adbf4&gt;</option></select>
+        <a href="/patients/edit_associated?associated_id=--ID--&amp;association=doctor" class="as_replace_existing" data-remote="true" id="as_patients--doctor-subform-add-existing" style="display: none;">Add Existing</a>
+        <script type="text/javascript">
+//<![CDATA[
+ActiveScaffold.show('as_patients--doctor-subform-add-existing');
+//]]>
+</script>
+  </div>
+</div>
+
+</div>
+<script type="text/javascript">
+//<![CDATA[
+ActiveScaffold.create_visibility_toggle('as_patients-99999999999-doctor-subform-div', {"default_visible":true,"hide_label":"Hide","show_label":"Show"});
+//]]>
+</script>  </li>
+</ol>
+
+
+  <p class="form-footer">
+    <input class="submit" name="commit" type="submit" value="Create" />
+    <a href="/patients" class="as_cancel" data-refresh="false" data-remote="true">Cancel</a>
+    <img alt="loading indicator" class="loading-indicator" id="as_patients-create--loading-indicator" src="/images/active_scaffold/default/indicator.gif?1324821817" style="visibility:hidden;" />
+  </p>
+
+</form>
+<script type="text/javascript">
+//<![CDATA[
+ActiveScaffold.focus_first_element_of_form('as_patients-create--form');
+//]]>
+</script>
+
+
+  </div>
+</div>    </div>
+  </td>
+</tr>
+<script type="text/javascript">
+//<![CDATA[
+var action_link = ActiveScaffold.ActionLink.get('as_patients-nested--row'); if (action_link) action_link.update_flash_messages('');
+//]]>
+</script>
