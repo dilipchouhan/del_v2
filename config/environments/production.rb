@@ -11,7 +11,7 @@ PatientsManagement::Application.configure do
 
   # Specifies the header that your server uses for sending files
   config.action_dispatch.x_sendfile_header = "X-Sendfile"
-
+  ACTIVE_SCAFFOLD_INSTALL_ASSETS = false 
   # For nginx:
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
 
