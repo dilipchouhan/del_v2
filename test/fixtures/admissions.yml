@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  patient: 
+  ward: MyString
+  floor: MyString
+  bad_no: MyString
+
+two:
+  patient: 
+  ward: MyString
+  floor: MyString
+  bad_no: MyString

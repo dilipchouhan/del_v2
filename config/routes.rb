@@ -1,7 +1,9 @@
 PatientsManagement::Application.routes.draw do
   resources :patients do as_routes end
+  resources :admissions do as_routes end
   devise_for :doctors
   match 'home' => 'homes#home', :as=>:home
+  match 'export_csv' => 'patients#export_csv'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
