@@ -848,9 +848,6 @@ font-family: Arial, sans-serif;
 font-size: 12px;
 padding: 1px;
 border: solid 1px #1F7F00;
-height: 150px;
-margin-bottom: 10px;
-width: 285px;
 }
 
 .active-scaffold .checkbox-list {
@@ -987,7 +984,6 @@ margin-right: 10px;
 .active-scaffold .sub-form .footer {
 color: #999;
 padding: 3px 5px;
-display:none;
 }
 
 .active-scaffold .sub-form .footer select,
