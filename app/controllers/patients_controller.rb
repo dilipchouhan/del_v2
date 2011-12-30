@@ -5,10 +5,17 @@ class PatientsController < ApplicationController
   before_filter :authenticate_doctor!
 
   active_scaffold :patient do |conf|
+    conf.list.columns.add :patient_admit_status
+    conf.list.always_show_search = true
     conf.columns.exclude :doctor
-    conf.nested.add_link(:admissions, {:label => 'Check Admit'}) 
-    conf.list.columns = [:first_name,:last_name, :city, :zipcode, :address, :age, :created_at]
+    conf.nested.add_link(:admissions, {:label => 'Admit'})
+    conf.nested.add_link(:treatments, {:label => 'Treatments'})
+    conf.columns[:gender].form_ui = :select
+    conf.columns[:gender].options = {:options => [["Male", "Male"],["Female", "Female"]]}
+    conf.list.columns = [:first_name,:last_name, :gender, :city, :address, :age, :created_at, :patient_admit_status]
     conf.action_links.add 'export_csv', :label => 'Export to Excel', :page => true
+    conf.list.sorting = {:admit_status =>:desc}
+    #conf.actions = [:create, :update,:list,:search,:delete, :show, :admissions]
   end
 
 
@@ -23,7 +30,7 @@ class PatientsController < ApplicationController
   end
 
   def conditions_for_collection
-    ['doctor_id = ?', current_doctor.id]
+    ['doctor_id = ? ', current_doctor.id]
   end
 
   def export_csv

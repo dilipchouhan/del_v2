@@ -8,5 +8,7 @@ class Doctor < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   
   has_many :patients, :dependent =>:nullify
+  has_many :floors, :dependent =>:destroy
+  has_many :wards, :through=>:floors
 
 end

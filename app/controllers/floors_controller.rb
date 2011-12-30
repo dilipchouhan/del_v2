@@ -1,14 +1,16 @@
-class PatientsController < ApplicationController
+class FloorsController < ApplicationController
+
   layout "profile"
   after_filter :assign_current_doctor, :only=>[:create]
   
   before_filter :authenticate_doctor!
 
-  active_scaffold :patient do |conf|
-    conf.columns.exclude :doctor
-    conf.list.columns = [:first_name,:last_name, :city, :zipcode, :address, :age, :created_at]
-  end
 
+  active_scaffold :floor do |conf|
+   conf.columns = [:floor_no, :desc, :wards ]
+   conf.nested.add_link(:wards, {:label => 'Create Wards'}) 
+   conf.list.columns = [:floor_no, :desc]
+  end
 
   def assign_current_doctor
     current_doct = current_doctor

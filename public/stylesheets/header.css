@@ -1,0 +1,32 @@
+.top_menu_main {
+    height: 28px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top_menu {
+    height: 28px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.top_menu ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.top_menu ul li {
+    float: left;
+    list-style: none outside none;
+    display:inline;
+}
+
+.top_menu ul li a {
+    color: #69A74E;
+    font: 14px "Trebuchet MS",Arial,Helvetica,sans-serif;
+    text-decoration: none;
+    border-right: 1px solid;
+    padding: 0 15px; 
+}

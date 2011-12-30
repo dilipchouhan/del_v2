@@ -11,9 +11,21 @@
   <%= active_scaffold_includes %>
   <%= stylesheet_link_tag "reset" %>
   <%= stylesheet_link_tag  "main" %>
+  <%= stylesheet_link_tag  "header" %>
 </head>
 <body>
- <%=render :partial=> "layouts/header" %>
+<%=render :partial=> "layouts/header" %>
+
+<div id="header">
+  <h1><a href="#">My <strong>Plus</strong></a></h1>
+  <ul>
+    <li><a href="/patients">PATIENTS</a></li>
+    <li><a href="/floors">ROOMS</a></li>
+    <li><a href="javascript:void(0);">APPOINTMENT TIMING</a></li>
+    <li><a href="javascript:void(0);">MY PROFILE</a></li>
+  </ul>
+</div>
+
 <%= yield %>
 <!-- //#content -->
 

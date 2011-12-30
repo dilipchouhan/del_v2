@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  doctor: 
+  floor_no: MyString
+  desc: MyString
+
+two:
+  doctor: 
+  floor_no: MyString
+  desc: MyString

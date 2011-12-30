@@ -1,14 +1,14 @@
-body { background: #fff; font-family: Arial, Helvetica, sans-serif; }
+body { background: #F8F8F8; font-family: Arial, Helvetica, sans-serif; }
 
 #header { width: 1000px; margin: 0 auto 35px auto; height: 118px; position: relative; border-bottom: 1px solid #ccc; }
 	#header h1 { padding-top: 38px; }
-	#header h1 a { display: block; padding: 18px; border: 1px solid #ccc; text-decoration: none; font-size: 23px; color: #000; text-transform: uppercase; width: 190px; }
+	#header h1 a { display: block; padding: 18px; border: 1px solid #ccc; text-decoration: none; font-size: 23px; color: #FFFFFF; text-transform: uppercase; width: 190px; background-color:#90EE90;font-size: 20px;    font-weight: bold; }
 	#header h1 a strong { color: #666; }
 
 	
 	#header ul { position: absolute; bottom: 15px; right: 0; }
 	#header ul li, #footer ul li { display: inline; }
-	#header ul li a, #footer ul li a { display: block; float: left; font-size: 14px; color: #000; text-decoration: none; text-transform: uppercase; padding: 0 15px; border-right: 1px solid #ccc; }
+	#header ul li a, #footer ul li a { display: block; float: left; font-size: 11px; color: #000; text-decoration: none; text-transform: uppercase; padding: 0 15px; border-right: 1px solid #ccc; }
 	#header ul li.last-item a { padding-right: 0; border: none; }
 	#footer ul li.first-item a { padding-left: 0; }
 	#header ul li a.active, #footer ul li a.active { font-weight: bold; }
@@ -42,8 +42,8 @@ body { background: #fff; font-family: Arial, Helvetica, sans-serif; }
 	#sidebar p a { color: #000; text-decoration: none; }
 	#sidebar ul li a { font-size: 11px; text-decoration: none; color: #000; background: url(../images/icons/arrow.gif) left no-repeat; padding-left: 25px; }
 	
-	#footer { font-size: 12px; border-top: 1px solid #ccc; padding: 20px 0; clear: both; width: 1000px; margin: 0 auto; position: relative; }
-	#footer ul li a { font-size: 12px; padding: 0 10px; }
+	#footer { border-top: 0px solid #ccc; padding: 10px 0; clear: both; margin: 0 auto; position: relative; bottom:0px;right:0px; }
+	#footer ul li a { font-size: 9px; padding: 0 10px; }
 	#footer p { clear: both; padding-top: 15px; } 
 	#footer p.custom { position: absolute; right: 0; top: 0; }
 	#footer p.custom strong { font-weight: bold; }

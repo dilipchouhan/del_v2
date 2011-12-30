@@ -1,6 +1,7 @@
 class Patient < ActiveRecord::Base
   belongs_to :doctor
   has_many :admissions, :dependent=>:destroy
+  has_many :treatments, :dependent=>:destroy
   #before_save :assign_current_doctor
 
   #def assign_current_doctor
@@ -15,6 +16,14 @@ class Patient < ActiveRecord::Base
   def to_csv
     id.to_s << "," << first_name.to_s << "," << last_name.to_s << "," << age.to_s << 
                      "," << address.to_s
+  end
+
+  def patient_admit_status
+    if admit_status
+      "Admit"
+    else
+      "Released"
+    end
   end
 
 end

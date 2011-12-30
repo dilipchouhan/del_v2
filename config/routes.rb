@@ -1,4 +1,8 @@
 PatientsManagement::Application.routes.draw do
+  resources :treatments do as_routes end
+
+  resources :floors do as_routes end
+  resources :wards do as_routes end
   resources :patients do as_routes end
   resources :admissions do as_routes end
   devise_for :doctors

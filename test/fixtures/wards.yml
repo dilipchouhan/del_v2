@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  floor: 
+  ward: MyString
+  available_bads: 1
+  desc: MyString
+
+two:
+  floor: 
+  ward: MyString
+  available_bads: 1
+  desc: MyString
